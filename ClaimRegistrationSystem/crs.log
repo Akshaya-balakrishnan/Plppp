@@ -1,0 +1,15 @@
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:in add Customer method
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:connection object created
+2019-02-07-main-ERROR-com.cg.crs.dao.CRSDaoImpl:ORA-02289: sequence does not exist
+
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:in add Customer method
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:connection object created
+2019-02-07-main-ERROR-com.cg.crs.dao.CRSDaoImpl:ORA-00001: unique constraint (SYSTEM.SYS_C007420) violated
+
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:in add Customer method
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:connection object created
+2019-02-07-main-ERROR-com.cg.crs.dao.CRSDaoImpl:ORA-00001: unique constraint (SYSTEM.SYS_C007420) violated
+
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:in add Customer method
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:connection object created
+2019-02-07-main-INFO -com.cg.crs.dao.CRSDaoImpl:execute update called

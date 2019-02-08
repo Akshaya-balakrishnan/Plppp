@@ -1,0 +1,22 @@
+package com.cg.crs.dao;
+
+public interface QueryMapper {
+	String checkUser="select role_code from User_role where username=? and password=?";
+    String userProfileCheck="select username from user_role where username=?";
+	String userProfileCreation = "insert into user_role values(?,?,?)";
+	String reportGeneration="select policy_number,claim_number,claim_type from claim where policy_number=(select policy_number from policy where account_number=(select account_number from accounts where userName=?))";
+    String detailedView="SELECT c.claim_reason,c.accident_street,c.accident_city,c.accident_state,c.accident_zip,c.claim_type,c_q.claim_ques_desc,p_d.answer from claim c,policy_details p_d,claim_questions c_q where c_q.claim_ques_id=p_d.question_id and p_d.policy_number=c.policy_number and p_d.policy_number=?";
+    public static final String insertCustomerDetails = "insert into claim values(claim_number_seq.nextval,?,?,?,?,?,?,?)";
+	// public static final String getClaimQuestionId = "select * from
+	// claim_questions where bus_seg_id=(select bus_seg_id from policy where
+	// policy_number=?)";
+	public static final String insertQuestion = "insert into policy_details values(?,?,?)";
+	public static final String getPolicies = "select * from policy";
+	public static final String getClaimStatus = "select * from claim where policy_number =?";
+	public static final String getClaimQuestionId = "select * from claim_questions where bus_seg_id=(select bus_seg_id from accounts where account_number =(select account_number from policy where policy_number=?))";
+}
+
+
+
+
+
